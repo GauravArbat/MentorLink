@@ -31,8 +31,13 @@ function App() {
     <BrowserRouter>
     <AuthProvider>
       <Routes>
+<<<<<<< HEAD
         {/*<Route path="/" element={<LandingMUI />}/>*/}
          <Route path="/" element={<Landing />}/>
+=======
+        <Route path="/" element={<Landing/>}/>
+         <Route path="/landing" element={<Landing />}/>
+>>>>>>> ea1dbd74a31452deb16fede32b4783aadfa978c0
         <Route path="/Signin" element={<SignInSide />}/>
         <Route path="/Home" element={<Home />}/>
         <Route path="/Signup" element={<Signup />}/>
