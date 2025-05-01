@@ -208,7 +208,7 @@ const Landing = () => {
               flex-shrink: 0;
             `}
             >
-              MentorMe
+              MentorLink
             </div>
           </div>
           <div
@@ -854,7 +854,7 @@ const Landing = () => {
               flex-shrink: 0;
             `}
             >
-              MentorMe
+              MentorLink
             </b>
           </div>
           <div

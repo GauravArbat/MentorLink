@@ -75,7 +75,7 @@ export default function NavigationBar(props) {
               textDecoration: 'none',
             }}
           >
-            MentorMe
+            Mentorlink
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>

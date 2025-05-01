@@ -5,9 +5,70 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite + React</title>
+    <style>
+      /* Chatbot button styles */
+      #chatbot-button {
+        position: fixed;
+        bottom: 20px;
+        right: 20px; /* Changed from left to right */
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+        z-index: 1000;
+      }
+
+      #chatbot-button:hover {
+        background-color: #0056b3;
+      }
+
+      #chatbot-iframe {
+        position: fixed;
+        bottom: 90px;
+        right: 20px; /* Changed from left to right */
+        width: 400px;
+        height: 600px;
+        border: none;
+        display: none;
+        z-index: 999;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+    </style>
   </head>
   <body>
     <div id="root"></div>
+
+    <!-- Chatbot Button -->
+    <button id="chatbot-button">
+      🤖
+    </button>
+
+    <!-- Chatbot Iframe -->
+    <iframe
+      id="chatbot-iframe"
+      src="https://www.chatbase.co/chatbot-iframe/mUZZ5pC71M4g6gKh2ij8F"
+    ></iframe>
+
     <script type="module" src="/src/main.jsx"></script>
+    <script>
+      // JavaScript to toggle chatbot visibility
+      const chatbotButton = document.getElementById('chatbot-button');
+      const chatbotIframe = document.getElementById('chatbot-iframe');
+
+      chatbotButton.addEventListener('click', () => {
+        if (chatbotIframe.style.display === 'none' || chatbotIframe.style.display === '') {
+          chatbotIframe.style.display = 'block';
+        } else {
+          chatbotIframe.style.display = 'none';
+        }
+      });
+    </script>
   </body>
 </html>

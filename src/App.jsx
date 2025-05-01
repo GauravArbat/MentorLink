@@ -32,7 +32,7 @@ function App() {
     <AuthProvider>
       <Routes>
         {/*<Route path="/" element={<LandingMUI />}/>*/}
-         <Route path="/landing" element={<Landing />}/>
+         <Route path="/" element={<Landing />}/>
         <Route path="/Signin" element={<SignInSide />}/>
         <Route path="/Home" element={<Home />}/>
         <Route path="/Signup" element={<Signup />}/>
