@@ -98,6 +98,9 @@ const Landing = () => {
               align-items: center;
               justify-content: center;
               color: #fafeff;
+              &:hover {
+                background-color: #014c9a;
+              }
             `}
             >
               <div
@@ -275,7 +278,12 @@ const Landing = () => {
                 color:#FFFFFF
               `}>Create Account</a>
               </div>
+              
             </div>
+            <div>
+               
+              <a href="/ExpertAdvice">ExpertAdvice</a>
+              </div>
           </div>
         </div>
         <div
@@ -905,9 +913,34 @@ const Landing = () => {
               </div>
             </div>
           </div>
+          <div
+            className={css`
+              margin-top: 10px;
+            `}
+          >
+            <a
+              href="/ExpertAdvice"
+              className={css`
+                display: inline-block;
+                text-decoration: none;
+                color: #ffffff;
+                background-color: #016eea;
+                padding: 10px 20px;
+                border-radius: 5px;
+                font-size: 16px;
+                font-weight: bold;
+                text-align: center;
+                transition: background-color 0.3s ease;
+                box-shadow: 1px 2px 4px rgba(21, 106, 206, 0.25);
+              `}
+            >
+              ExpertAdvice
+            </a>
+          </div>
         </div>
       </div>
   );
 };
 
 export default Landing;
+

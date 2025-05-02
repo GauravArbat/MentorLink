@@ -1,0 +1,48 @@
+.expert-advice-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.expert-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.expert-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.expert-card h2 {
+  margin: 0;
+  font-size: 1.5em;
+}
+
+.expert-card h3 {
+  margin: 10px 0;
+  color: #555;
+}
+
+.expert-card p {
+  font-size: 1em;
+  color: #666;
+}
+
+.join-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.join-button:hover {
+  background-color: #0056b3;
+}
